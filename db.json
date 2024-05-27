@@ -1,12 +1,39 @@
 {
   "movies": [
     {
+      "id": "9b80",
+      "mname": "Dasavatharam",
+      "mposter": "https://i.ytimg.com/vi/9uqR15lEddE/maxresdefault.jpg",
+      "mlanguage": "Tamil",
+      "mgenre": "Action, Fantasy",
+      "mdesc": "The plot revolves around a bio-weapon threat and how it affects the lives of various characters across different timelines. The film explores themes of reincarnation, the concept of avatars, and the battle between good and evil.",
+      "mrating": "5"
+    },
+    {
       "id": "7124",
       "mname": "Fun2shh",
       "mposter": "https://i.pinimg.com/originals/ba/c0/88/bac0881541187ffce1c785caab8cda7b.jpg",
       "mlanguage": "Hindi",
       "mgenre": "Comedy, Fantasy",
-      "mdesc": "Set in the bustling city of Mumbai, Fun2shh follows the hilarious misadventures of three friends who inadvertently travel back in time to the Mughal era.",
+      "mdesc":"It is a Bollywood comedy film directed by Imtiaz Punjabi. The story revolves around a group of friends who accidentally discover a time machine and travel back in time to the 10th century, where they encounter various adventures and misadventures.",
+      "mrating": "4"
+    },
+    {
+      "id": "8b0c",
+      "mname": "Gajakesari",
+      "mposter": "https://i.ytimg.com/vi/NvtmI5PBgXo/maxresdefault.jpg",
+      "mlanguage": "Kannada",
+      "mgenre": "Action, Drama",
+      "mdesc": "The story revolves around a warrior who forms a strong bond with Gajasura and together they fight against injustice and protect their kingdom from external threats. The film combines elements of action, drama, and mythology.",
+      "mrating": "5"
+    },
+    {
+      "id": "a869",
+      "mname": "Main Hoon Lucky The Racer",
+      "mposter": "https://i.ytimg.com/vi/aRtqExZAt5s/maxresdefault.jpg",
+      "mlanguage": "Telugu",
+      "mgenre": "Action, Comedy",
+      "mdesc": "It revolves around two brothers, Ram and Lakshman, who have contrasting personalities. Ram, played by Allu Arjun, is a carefree guy with a penchant for street racing, while Lakshman, played by Shaam, is a sincere police officer. ",
       "mrating": "4"
     }
   ]

@@ -15,7 +15,7 @@ const index = () => {
     return (
         <React.Fragment>
             <h1 className="pro-head">View Movies</h1>
-            <main className="page-content">
+            <div className="page-content">
                 {movies.map((movie, i) => (
                     <div className="flip" key={i}>
                         <div className="front" style={{ backgroundImage: `url(${movie.mposter})` }}>
@@ -23,13 +23,14 @@ const index = () => {
                         </div>
                         <div className="back">
                             <h2 className="movie-title">{movie.mname}</h2>
+                            <p className="movie-genre">{movie.mlanguage}</p>
                             <p className="movie-genre">{movie.mgenre}</p>
                             <p className="movie-description">{movie.mdesc}</p>
                             <p className="movie-rating"> {movie.mrating}/5</p>
                         </div>
                     </div>
                 ))}
-            </main>
+            </div>
         </React.Fragment>
     );
 };
