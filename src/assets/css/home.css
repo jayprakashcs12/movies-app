@@ -1,3 +1,58 @@
+.pro-container {
+    margin: 0 auto;
+    width: 500px;
+}
+
 .pro-head {
     text-align: center;
+    margin: 3% 0;
+}
+
+.pro-label, .pro-input {
+    display: block;
+}
+
+.pro-input {
+    padding: 10px;
+    height: 20px;
+}
+
+.pro-select {
+    height: 35px;
+    padding: 0 10px;
+}
+
+.pro-input, .pro-select {
+    border: 1px solid #333;
+    width: 100%;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.pro-input, .pro-select, .btn-div {
+    margin: 10px 0;
+}
+
+.act-btn {
+    padding: 10px 35px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 2%;
+    border: none;
+}
+
+.pro-input, .pro-select, .act-btn {
+    border-radius: 15px;
+    outline: none;
+}
+
+.post-btn {
+    background-color:#008000;
+}
+
+.reset-btn {
+    background-color: #ff0000;
 }
