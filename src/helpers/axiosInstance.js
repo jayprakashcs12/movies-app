@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios from "axios";
 
-let baseURL = "http://localhost:3000/";
-
-let axiosInstance = axios.create({baseURL: baseURL });
+let axiosInstance  = axios.create({
+    baseURL : "http://localhost:3000"
+})
 
 export default axiosInstance;

@@ -1,5 +1,13 @@
 {
-    "movies": [
-      
-    ]
+  "movies": [
+    {
+      "id": "7124",
+      "mname": "Fun2shh",
+      "mposter": "https://i.pinimg.com/originals/ba/c0/88/bac0881541187ffce1c785caab8cda7b.jpg",
+      "mlanguage": "Hindi",
+      "mgenre": "Comedy, Fantasy",
+      "mdesc": "Set in the bustling city of Mumbai, Fun2shh follows the hilarious misadventures of three friends who inadvertently travel back in time to the Mughal era.",
+      "mrating": "4"
+    }
+  ]
 }
