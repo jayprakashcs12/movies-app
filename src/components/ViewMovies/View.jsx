@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../helpers/axiosInstance';
+import { useNavigate } from 'react-router-dom';
+import "./view.css"
 
-const index = () => {
+const View = () => {
 
     let [movies, setMovies] = useState([]);
 
@@ -13,6 +15,7 @@ const index = () => {
     }, []);
 
     return (
+
         <React.Fragment>
             <h1 className="pro-head">View Movies</h1>
             <main className="page-content">
@@ -25,13 +28,13 @@ const index = () => {
                             <h2 className="movie-title">{movie.mname}</h2>
                             <p className="movie-genre">{movie.mgenre}</p>
                             <p className="movie-description">{movie.mdesc}</p>
-                            <p className="movie-rating"> {movie.mrating}/5</p>
+                            <p className="movie-rating">Rating: {movie.mrating}/5</p>
                         </div>
                     </div>
                 ))}
             </main>
         </React.Fragment>
-    );
-};
+    )
+}
 
-export default index;
+export default View

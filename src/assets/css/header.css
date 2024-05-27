@@ -5,11 +5,12 @@
 .main-nav {
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color4);
-    color: var(--color3);
+    background-color: var(--color3);
+    color: var(--color2);
     position: sticky;
     padding: 0 5%;
     min-height: max-content;
+    z-index: 9 !important;
     top: 0;
 }
 
@@ -17,7 +18,7 @@
     font-size: 1.5rem;
     margin: 1rem;
     text-decoration: none;
-    color: var(--color3);
+    color: var(--color2);
 }
 
 .order-list {
@@ -27,14 +28,14 @@
 .nav-link {
     display: block;
     text-decoration: none;
-    color: var(--color3);
+    color: var(--color2);
     padding: 0.5rem;
     margin: 0 0.5rem;
     border-radius: 0.5rem;
 }
 
 .nav-link:hover, .nav-link.active {
-    color:var(--color6);
+    color:var(--color4);
 }
 
 .menu {
@@ -51,7 +52,7 @@
 .menu-icon {
     height: 5px;
     width: 100%;
-    background-color: var(--color3);
+    background-color: var(--color2);
     border-radius: 0.2rem;
     margin: 5px 0;
 }

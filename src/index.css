@@ -13,10 +13,11 @@
 }
 
 :root {
-  --color1:rgba(50, 50, 93, 0.25);
-  --color2:rgba(0, 0, 0, 0.3);
-  --color3:rgb(255, 255, 255);
-  --color4:rgb(96, 128, 96);
-  --color5:#0b4349;
-  --color6:#172554;
+  --color1:rgba(0, 0, 0, 0.4);
+  --color2:rgb(255, 255, 255);
+  --color3:rgb(96, 128, 96);
+  --color4:#172554;
+  --color5:#313131;
+  --color6:#008000;
+  --color7:#ff0000;
 }
