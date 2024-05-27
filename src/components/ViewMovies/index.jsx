@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../helpers/axiosInstance';
+import StarRating from './StarRating';
 
 const index = () => {
 
@@ -26,7 +27,7 @@ const index = () => {
                             <p className="movie-genre">{movie.mlanguage}</p>
                             <p className="movie-genre">{movie.mgenre}</p>
                             <p className="movie-description">{movie.mdesc}</p>
-                            <p className="movie-rating"> {movie.mrating}/5</p>
+                            <StarRating mrating={movie.mrating} />
                         </div>
                     </div>
                 ))}
