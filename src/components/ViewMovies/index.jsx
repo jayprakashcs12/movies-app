@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../helpers/axiosInstance';
-import StarRating from './StarRating';
+import StarRating from '../StarRating';
 
 const index = () => {
 

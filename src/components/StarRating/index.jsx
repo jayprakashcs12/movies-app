@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StarRating = ({ mrating }) => {
+const index = ({ mrating }) => {
 
     let stars = [];
 
@@ -15,4 +15,4 @@ const StarRating = ({ mrating }) => {
     return <div className="star-rating">{stars}</div>;
 };
 
-export default StarRating;
+export default index;
