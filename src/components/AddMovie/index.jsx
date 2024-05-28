@@ -24,7 +24,12 @@ const index = () => {
         if (!mname || !mposter || !mlanguage || !mgenre || !mdesc || !mrating) {
             toast.error('Please fill all mandatory fields...!');
         } else {
-            axiosInstance.post("movies", movieData)
+            axiosInstance.post("movies.json", movieData, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ mname, mposter, mlanguage, mgenre, mdesc, mrating })
+            })
             .then((resp) => {
                 toast.success(`${mname} saved successfully...!`);
                 setMovieData({ mname: "", mposter: "", mlanguage: "", mgenre: "", mdesc: "", mrating: "" });
