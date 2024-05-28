@@ -107,7 +107,7 @@
     background-size: cover !important;
     background-position: center !important;
     height: 250px;
-    width: 380px;
+    width: 330px;
     padding: 1rem 2em;
     background: var( --color5);
     border-radius: 10px;
@@ -133,7 +133,7 @@
 
 .movie-title {
     font-size: 24px;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .movie-description, .movie-genre, .movie-rating {
