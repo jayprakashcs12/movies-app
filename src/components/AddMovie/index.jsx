@@ -64,6 +64,7 @@ const index = () => {
 
                 <label className='pro-label' htmlFor="mrating"> Movie Rating </label>
                 <select className='pro-select' name="mrating" value={mrating} onChange={moviesData}>
+                    <option value=""> Select Movie Rating </option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
