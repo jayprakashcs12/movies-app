@@ -20,17 +20,19 @@ const index = () => {
         <React.Fragment>
             <h1 className="pro-head">View Movies</h1>
             <div className="page-content">
-                {Object.keys(movies).map(movieId => (
-                    <div className="flip" key={movieId}>
-                        <div className="front" style={{ backgroundImage: `url(${movies[movieId].mposter})` }}>
-                            <h1 className="text-shadow">{movies[movieId].mname}</h1>
-                        </div>
-                        <div className="back">
-                            <h2 className="movie-title">{movies[movieId].mname}</h2>
-                            <p className="movie-genre">{movies[movieId].mlanguage}</p>
-                            <p className="movie-genre">{movies[movieId].mgenre}</p>
-                            <p className="movie-description">{movies[movieId].mdesc}</p>
-                            <StarRating mrating={movies[movieId].mrating} />
+                {Object.keys(movies).map(i => (
+                    <div className="flip" key={i}>
+                        <div className="front">
+                            <img src={movies[i].mposter} alt={movies[i].mposter} className='movie-img' />
+                            <h1 className="text-shadow">{movies[i].mname}</h1>
+                            <p className="movie-genre">{movies[i].mlanguage}</p>
+                            <p className="movie-genre">{movies[i].mgenre}</p>
+                            <p className="movie-description">{movies[i].mdesc}</p>
+                            <StarRating mrating={movies[i].mrating} />
+                            <div className="btn-div">
+                                <button className='act-btn post-btn'>UPDATE</button>
+                                <button className='act-btn reset-btn'>DELETE</button>
+                            </div>
                         </div>
                     </div>
                 ))}
