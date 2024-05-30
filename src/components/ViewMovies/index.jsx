@@ -21,9 +21,9 @@ const index = () => {
             <h1 className="pro-head">View Movies</h1>
             <div className="page-content">
                 {Object.keys(movies).map(i => (
-                    <div className="flip" key={i}>
-                        <div className="front">
-                            <img src={movies[i].mposter} alt={movies[i].mposter} className='movie-img' />
+                    <div className="main-div" key={i}>
+                        <div className="child-div">
+                            <img src={movies[i].mposter} alt={movies[i].mname} className='movie-img' />
                             <h1 className="text-shadow">{movies[i].mname}</h1>
                             <p className="movie-genre">{movies[i].mlanguage}</p>
                             <p className="movie-genre">{movies[i].mgenre}</p>
