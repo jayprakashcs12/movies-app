@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../helpers/axiosInstance';
-import StarRating from '../StarRating';
 import { useNavigate } from 'react-router-dom';
+import StarRating from '../StarRating';
 import { toast } from 'react-toastify';
 
 const index = () => {
-    const [movies, setMovies] = useState([]);
-    const navigate = useNavigate();
+    let [movies, setMovies] = useState([]);
+    let navigate = useNavigate();
 
     useEffect(() => {
         document.title = "Views Movie";
@@ -23,6 +23,10 @@ const index = () => {
 
     let handleUpdate = (id) => {
         navigate(`/update-movie/${id}`);
+    };
+
+    let handleView = (id) => {
+        navigate(`/view-movie/${id}`);
     };
 
     let handleDelete = async (id, mname) => {
@@ -45,11 +49,11 @@ const index = () => {
                         <div className="child-div">
                             <img src={x.mposter} alt={x.mname} className='movie-img' />
                             <h1 className="text-shadow">{x.mname}</h1>
-                            <p className="movie-genre">{x.mlanguage}</p>
+                            <p className="movie-language">{x.mlanguage}</p>
                             <p className="movie-genre">{x.mgenre}</p>
-                            <p className="movie-description">{x.mdesc}</p>
                             <StarRating mrating={x.mrating} />
                             <div className="btn-div">
+                                <button className='act-btn post-btn' onClick={() => handleView(x.id)}>VIEW</button>
                                 <button className='act-btn post-btn' onClick={() => handleUpdate(x.id)}>UPDATE</button>
                                 <button className='act-btn reset-btn' onClick={() => handleDelete(x.id, x.mname)}>DELETE</button>
                             </div>

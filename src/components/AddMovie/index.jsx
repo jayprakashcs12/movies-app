@@ -1,30 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../helpers/axiosInstance';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 const index = () => {
 
     let navigate = useNavigate();
-    let { id } = useParams();
     let [movieData, setMovieData] = useState({ mname: "", mposter: "", mlanguage: "", mgenre: "", mdesc: "", mrating: "" });
 
     let { mname, mposter, mlanguage, mgenre, mdesc, mrating } = movieData;
 
     useEffect(() => {
         document.title = "Add Movie";
-        if (id) {
-            document.title = "Update Movie";
-            axiosInstance.get(`movies/${id}`)
-            .then((resp) => {
-                setMovieData(resp.data);
-            })
-            .catch((err) => {
-                console.error("Error fetching movie data:", err);
-                toast.error("Failed to fetch movie data. Please try again later.");
-            });
-        }
-    }, [id]);
+    }, []);
 
     let moviesData = (e) => {
         let { name, value } = e.target;
@@ -52,26 +40,6 @@ const index = () => {
         }
     };
 
-    let handleUpdate = (e) => {
-        e.preventDefault();
-        if (!mname || !mposter || !mlanguage || !mgenre || !mdesc || !mrating) {
-            toast.error('Please fill all mandatory fields...!');
-        } else {
-            axiosInstance.put(`movies/${id}`, movieData, {
-                headers: { 'Content-Type': 'application/json', },
-                body: JSON.stringify({ mname, mposter, mlanguage, mgenre, mdesc, mrating })
-            })
-            .then((resp) => {
-                toast.success(`${mname} updated successfully...!`);
-                navigate("/view-movies");
-            })
-            .catch((err) => {
-                console.error("Error updating movie data:", err);
-                toast.error("Failed to update movie data. Please try again later.");
-            });
-        }
-    };
-
     let handleClear = (e) => {
         e.preventDefault();
         setMovieData({ mname: "", mposter: "", mlanguage: "", mgenre: "", mdesc: "", mrating: "" });
@@ -80,7 +48,7 @@ const index = () => {
 
     return (
         <div className="pro-container">
-            <h1 className="pro-head">{id ? "Edit Movie" : "Add Movie"}</h1>
+            <h1 className="pro-head">Add Movie</h1>
             <form>
                 <label className='pro-label' htmlFor="mname"> Movie Name </label>
                 <input type="text" className='pro-input' name="mname" value={mname} onChange={moviesData} placeholder='Enter Your Movie Name' />
@@ -108,7 +76,7 @@ const index = () => {
                 </select>
 
                 <div className="btn-div">
-                    <button type="submit" className='act-btn post-btn' onClick={id ? handleUpdate : handleSave}>{id ? "Update" : "Submit"}</button>
+                    <button type="submit" className='act-btn post-btn' onClick={handleSave}>Submit</button>
                     <button type="reset" className='act-btn reset-btn' onClick={handleClear}>Clear</button>
                 </div>
             </form>

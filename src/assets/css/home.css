@@ -114,3 +114,11 @@
 }
 
 /* card */
+
+.movie-content, .view-div {
+    text-align: center;
+}
+
+.gap-div {
+    margin: 1% 0;
+}
