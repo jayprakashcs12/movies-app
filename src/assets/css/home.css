@@ -77,7 +77,6 @@
 .child-div {
     display: block;
     color: var(--color2);
-    height: 550px;
     width: 330px;
     padding: 1rem 2em;
     background: var( --color5);

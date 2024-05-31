@@ -1,7 +1,7 @@
 import axios from "axios";
 
 let axiosInstance  = axios.create({
-    baseURL : "https://pro-movie-apps-default-rtdb.firebaseio.com/"
+    baseURL : "http://localhost:3000/"
 })
 
 export default axiosInstance;

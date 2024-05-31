@@ -1,0 +1,31 @@
+{
+  "movies": [
+    {
+      "id": "9b80",
+      "mname": "Dasavatharam",
+      "mposter": "https://i.ytimg.com/vi/9uqR15lEddE/maxresdefault.jpg",
+      "mlanguage": "Tamil",
+      "mgenre": "Action, Fantasy",
+      "mdesc": "The plot revolves around a bio-weapon threat and how it affects the lives of various characters across different timelines. The film explores themes of reincarnation, the concept of avatars, and the battle between good and evil.",
+      "mrating": "4"
+    },
+    {
+      "id": "7124",
+      "mname": "Ram Aur Shyam",
+      "mposter": "https://i.ytimg.com/vi/ksPLpsjaB1k/maxresdefault.jpg",
+      "mlanguage": "Hindi",
+      "mgenre": "Comedy, Family",
+      "mdesc": "It is a classic Bollywood film from 1967 that tells the story of twin brothers, Ram and Shyam, who were separated at birth and grew up in different environments.Ram is timid & easily frightened, while Shyam is bold and confident.",
+      "mrating": "4"
+    },
+    {
+      "id": "8b0v",
+      "mname": "Chaarulatha",
+      "mposter": "https://i.ytimg.com/vi/n9AjHLsbgRI/maxresdefault.jpg",
+      "mlanguage": "Kannada",
+      "mgenre": "Drama, Horror",
+      "mdesc": "Charu and Latha are conjoined twins and Ravi is in love with Charu. Latha, who also loves Ravi, dies in an operation performed to separate the twins, and her ghost returns to haunt the couple.",
+      "mrating": "5"
+    }
+  ]
+}
