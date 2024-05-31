@@ -77,10 +77,10 @@ const index = () => {
     return (
         <React.Fragment>
             <div className="view-div">
-                <button className='act-btn post-btn' onClick={handleBack}> <BiArrowBack className='act-btn' /> </button>
+                <BiArrowBack className='act-btn post-btn' onClick={handleBack} />
             </div>
             <div className="pro-container">
-                <h1 className="pro-head">{id ? "Edit Movie" : "Add Movie"}</h1>
+                <h1 className="pro-head">{`Edit ${mname}`}</h1>
                 <form>
                     <label className='pro-label' htmlFor="mname"> Movie Name </label>
                     <input type="text" className='pro-input' name="mname" value={mname} onChange={moviesData} placeholder='Enter Your Movie Name' />
@@ -95,7 +95,8 @@ const index = () => {
                     <input type="text" className='pro-input' name="mgenre" value={mgenre} onChange={moviesData} placeholder='Enter Your Movie Genre' />
 
                     <label className='pro-label' htmlFor="mdesc"> Movie Description </label>
-                    <input type="text" className='pro-input' name="mdesc" value={mdesc} onChange={moviesData} placeholder='Enter Your Movie Description' />
+                    <textarea type="text" className='pro-input pro-textarea' name="mdesc" value={mdesc} onChange={moviesData}
+                        placeholder='Enter Your Movie Description'></textarea>
 
                     <label className='pro-label' htmlFor="mrating"> Movie Rating </label>
                     <select className='pro-select' name="mrating" value={mrating} onChange={moviesData}>
@@ -108,8 +109,8 @@ const index = () => {
                     </select>
 
                     <div className="btn-div">
-                        <button type="submit" className='act-btn post-btn' onClick={handleUpdate}> <BsSend className='act-btn' /> </button>
-                        <button type="reset" className='act-btn reset-btn' onClick={handleClear}> <BsEraser className='act-btn' /> </button>
+                        <BsSend className='act-btn post-btn' onClick={handleUpdate} />
+                        <BsEraser className='act-btn reset-btn' onClick={handleClear} />
                     </div>
                 </form>
             </div>

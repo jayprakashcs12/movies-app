@@ -37,19 +37,19 @@ const index = () => {
 
         <React.Fragment>
             <div className="view-div gap-div">
-                <button className='act-btn post-btn' onClick={handleBack}> <BiArrowBack className='act-btn' /> </button>
+                <BiArrowBack className='act-btn post-btn' onClick={handleBack} />
             </div>
             <div className="movie-content">
                 <div className="main-div">
                     <div className="child-div">
                         <img src={movie.mposter} alt={movie.mname} className='movie-img' />
                         <h1 className="text-shadow">{movie.mname}</h1>
-                        <p className="movie-language">{movie.mlanguage}</p>
-                        <p className="movie-genre">{movie.mgenre}</p>
+                        <p className="movie-desc">{movie.mlanguage}</p>
+                        <p className="movie-desc">{movie.mgenre}</p>
                         <p className="movie-desc">{movie.mdesc}</p>
                         <StarRating mrating={movie.mrating} />
                         <div className="btn-div">
-                            <button className='act-btn post-btn' onClick={() => handleUpdate(movie.id)}> <BsPencil className='act-btn' /> </button>
+                            <BsPencil className='act-btn post-btn' onClick={() => handleUpdate(movie.id)} />
                         </div>
                     </div>
                 </div>

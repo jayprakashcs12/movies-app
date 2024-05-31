@@ -64,7 +64,9 @@ const index = () => {
                 <input type="text" className='pro-input' name="mgenre" value={mgenre} onChange={moviesData} placeholder='Enter Your Movie Genre' />
 
                 <label className='pro-label' htmlFor="mdesc"> Movie Description </label>
-                <input type="text" className='pro-input' name="mdesc" value={mdesc} onChange={moviesData} placeholder='Enter Your Movie Description' />
+                <textarea type="text" className='pro-input pro-textarea' name="mdesc" value={mdesc} onChange={moviesData}
+                    placeholder='Enter Your Movie Description'></textarea>
+
 
                 <label className='pro-label' htmlFor="mrating"> Movie Rating </label>
                 <select className='pro-select' name="mrating" value={mrating} onChange={moviesData}>
@@ -77,8 +79,8 @@ const index = () => {
                 </select>
 
                 <div className="btn-div">
-                    <button type="submit" className='act-btn post-btn' onClick={handleSave}> <BsSend className='act-btn' /> </button>
-                    <button type="reset" className='act-btn reset-btn' onClick={handleClear}> <BsEraser className='act-btn' /> </button>
+                    <BsSend className='act-btn post-btn' onClick={handleSave} />
+                    <BsEraser className='act-btn reset-btn' onClick={handleClear} />
                 </div>
             </form>
         </div>

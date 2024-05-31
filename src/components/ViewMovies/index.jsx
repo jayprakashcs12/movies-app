@@ -52,13 +52,13 @@ const index = () => {
                         <div className="child-div">
                             <img src={x.mposter} alt={x.mname} className='movie-img' />
                             <h1 className="text-shadow">{x.mname}</h1>
-                            <p className="movie-language">{x.mlanguage}</p>
-                            <p className="movie-genre">{x.mgenre}</p>
+                            <p className="movie-desc">{x.mlanguage}</p>
+                            <p className="movie-desc">{x.mgenre}</p>
                             <StarRating mrating={x.mrating} />
                             <div className="btn-div">
-                                <button className='act-btn post-btn' onClick={() => handleView(x.id)}> <IoEyeOutline className='act-btn' /> </button>
-                                <button className='act-btn post-btn' onClick={() => handleUpdate(x.id)}> <BsPencil className='act-btn' /> </button>
-                                <button className='act-btn reset-btn' onClick={() => handleDelete(x.id, x.mname)}> <GoTrash className='act-btn' /> </button>
+                                <IoEyeOutline className='act-btn post-btn' onClick={() => handleView(x.id)} />
+                                <BsPencil className='act-btn post-btn' onClick={() => handleUpdate(x.id)} />
+                                <GoTrash className='act-btn reset-btn' onClick={() => handleDelete(x.id, x.mname)} />
                             </div>
                         </div>
                     </div>

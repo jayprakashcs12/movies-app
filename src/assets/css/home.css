@@ -34,11 +34,14 @@
     margin: 5px 0;
 }
 
+.pro-textarea {
+    height: 60px;
+}
+
 .act-btn {
-    padding: 5px 10px;
+    padding: 10px 15px;
     font-size: 15px;
     cursor: pointer;
-    color: #fff;
     margin: 0 2%;
     border: none;
 }
@@ -49,11 +52,11 @@
 }
 
 .post-btn {
-    background-color:var(--color6);
+    color:var(--color6);
 }
 
 .reset-btn {
-    background-color: var(--color7);
+    color: var(--color7);
 }
 
 .pro-toast {
@@ -80,9 +83,12 @@
     color: var(--color2);
     width: 330px;
     padding: 1rem 2em;
-    background: var( --color5);
     border-radius: 10px;
     text-align: center;
+}
+
+.act-btn, .child-div {
+    border: 1px solid #2d1b1b;
 }
 
 .text-shadow {
@@ -101,8 +107,9 @@
     font-size: 24px;
 }
 
-.movie-description, .movie-genre, .movie-rating {
+.movie-desc {
     font-size: 16px;
+    color: var(--color5);
 }
 
 .star {
