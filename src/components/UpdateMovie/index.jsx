@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import axiosInstance from '../../helpers/axiosInstance';
 import { useNavigate, useParams } from 'react-router-dom';
+import axiosInstance from '../../helpers/axiosInstance';
+import { BsEraser, BsSend } from 'react-icons/bs';
+import { BiArrowBack } from 'react-icons/bi';
 import { toast } from 'react-toastify';
 
 const index = () => {
@@ -75,7 +77,7 @@ const index = () => {
     return (
         <React.Fragment>
             <div className="view-div">
-                <button className='act-btn post-btn' onClick={handleBack}>Go Back</button>
+                <button className='act-btn post-btn' onClick={handleBack}> <BiArrowBack className='act-btn' /> </button>
             </div>
             <div className="pro-container">
                 <h1 className="pro-head">{id ? "Edit Movie" : "Add Movie"}</h1>
@@ -106,8 +108,8 @@ const index = () => {
                     </select>
 
                     <div className="btn-div">
-                        <button type="submit" className='act-btn post-btn' onClick={handleUpdate}>Update</button>
-                        <button type="reset" className='act-btn reset-btn' onClick={handleClear}>Clear</button>
+                        <button type="submit" className='act-btn post-btn' onClick={handleUpdate}> <BsSend className='act-btn' /> </button>
+                        <button type="reset" className='act-btn reset-btn' onClick={handleClear}> <BsEraser className='act-btn' /> </button>
                     </div>
                 </form>
             </div>

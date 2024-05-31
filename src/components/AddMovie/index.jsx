@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../helpers/axiosInstance';
+import { BsEraser, BsSend } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
@@ -76,8 +77,8 @@ const index = () => {
                 </select>
 
                 <div className="btn-div">
-                    <button type="submit" className='act-btn post-btn' onClick={handleSave}>Submit</button>
-                    <button type="reset" className='act-btn reset-btn' onClick={handleClear}>Clear</button>
+                    <button type="submit" className='act-btn post-btn' onClick={handleSave}> <BsSend className='act-btn' /> </button>
+                    <button type="reset" className='act-btn reset-btn' onClick={handleClear}> <BsEraser className='act-btn' /> </button>
                 </div>
             </form>
         </div>

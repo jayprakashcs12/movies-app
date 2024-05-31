@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import axiosInstance from '../../helpers/axiosInstance';
+import { BiArrowBack } from "react-icons/bi";
+import { BsPencil } from 'react-icons/bs';
 import StarRating from '../StarRating';
 
 const index = () => {
@@ -35,7 +37,7 @@ const index = () => {
 
         <React.Fragment>
             <div className="view-div gap-div">
-                <button className='act-btn post-btn' onClick={handleBack}>Go Back</button>
+                <button className='act-btn post-btn' onClick={handleBack}> <BiArrowBack className='act-btn' /> </button>
             </div>
             <div className="movie-content">
                 <div className="main-div">
@@ -47,7 +49,7 @@ const index = () => {
                         <p className="movie-desc">{movie.mdesc}</p>
                         <StarRating mrating={movie.mrating} />
                         <div className="btn-div">
-                            <button className='act-btn post-btn' onClick={() => handleUpdate(movie.id)}>Update</button>
+                            <button className='act-btn post-btn' onClick={() => handleUpdate(movie.id)}> <BsPencil className='act-btn' /> </button>
                         </div>
                     </div>
                 </div>

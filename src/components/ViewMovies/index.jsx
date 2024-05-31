@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../helpers/axiosInstance';
+import { IoEyeOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+import { BsPencil } from "react-icons/bs";
+import { GoTrash } from "react-icons/go";
 import StarRating from '../StarRating';
 import { toast } from 'react-toastify';
 
@@ -10,7 +13,7 @@ const index = () => {
 
     useEffect(() => {
         document.title = "Views Movie";
-        const fetchData = async () => {
+        let fetchData = async () => {
             try {
                 let { data } = await axiosInstance.get("movies");
                 setMovies(data);
@@ -53,9 +56,9 @@ const index = () => {
                             <p className="movie-genre">{x.mgenre}</p>
                             <StarRating mrating={x.mrating} />
                             <div className="btn-div">
-                                <button className='act-btn post-btn' onClick={() => handleView(x.id)}>VIEW</button>
-                                <button className='act-btn post-btn' onClick={() => handleUpdate(x.id)}>UPDATE</button>
-                                <button className='act-btn reset-btn' onClick={() => handleDelete(x.id, x.mname)}>DELETE</button>
+                                <button className='act-btn post-btn' onClick={() => handleView(x.id)}> <IoEyeOutline className='act-btn' /> </button>
+                                <button className='act-btn post-btn' onClick={() => handleUpdate(x.id)}> <BsPencil className='act-btn' /> </button>
+                                <button className='act-btn reset-btn' onClick={() => handleDelete(x.id, x.mname)}> <GoTrash className='act-btn' /> </button>
                             </div>
                         </div>
                     </div>

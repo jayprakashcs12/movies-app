@@ -35,7 +35,8 @@
 }
 
 .act-btn {
-    padding: 10px 35px;
+    padding: 5px 10px;
+    font-size: 15px;
     cursor: pointer;
     color: #fff;
     margin: 0 2%;
@@ -89,9 +90,9 @@
 }
 
 .movie-img {
-    height: 230px;
-    width: 230px;
-    padding: 10px;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
     border-radius: 50%;
 }
 
