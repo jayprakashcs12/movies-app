@@ -58,7 +58,9 @@ const index = () => {
                             <div className="btn-div">
                                 <IoEyeOutline className='act-btn post-btn' onClick={() => handleView(x.id)} />
                                 <BsPencil className='act-btn post-btn' onClick={() => handleUpdate(x.id)} />
-                                <GoTrash className='act-btn reset-btn' onClick={() => handleDelete(x.id, x.mname)} />
+                                <GoTrash className='act-btn reset-btn' onClick={() => 
+                                    {if(window.confirm(`Are you sure, you want to delete movie ${x.mname} ?`)) {handleDelete(x.id, x.mname);}}}  
+                                />
                             </div>
                         </div>
                     </div>
