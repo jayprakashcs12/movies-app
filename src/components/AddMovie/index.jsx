@@ -67,7 +67,6 @@ const index = () => {
                 <textarea type="text" className='pro-input pro-textarea' name="mdesc" value={mdesc} onChange={moviesData}
                     placeholder='Enter Your Movie Description'></textarea>
 
-
                 <label className='pro-label' htmlFor="mrating"> Movie Rating </label>
                 <select className='pro-select' name="mrating" value={mrating} onChange={moviesData}>
                     <option value=""> Select Movie Rating </option>
