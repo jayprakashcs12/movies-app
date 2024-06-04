@@ -54,7 +54,7 @@ const index = () => {
                 body: JSON.stringify({ mname, mposter, mlanguage, mgenre, mdesc, mrating })
             })
             .then((resp) => {
-                toast.success(`${mname} updated successfully...!`);
+                toast.info(`${mname} updated successfully...!`);
                 navigate("/view-movies");
             })
             .catch((err) => {
